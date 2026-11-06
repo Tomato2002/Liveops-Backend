@@ -1,0 +1,68 @@
+{
+  "gameId": "classic_777",
+  "title": "Classic 777 Vegas",
+  "version": "1.0.0",
+  "dimensions": {
+    "reels": 5,
+    "rows": 3
+  },
+  "betTiers": [
+    100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000
+  ],
+  "symbols": [
+    { "id": "WILD", "name": "Wild Symbol", "isWild": true, "isScatter": false },
+    { "id": "SCATTER", "name": "Free Spin Scatter", "isWild": false, "isScatter": true },
+    { "id": "SEVEN", "name": "Lucky Seven", "isWild": false, "isScatter": false },
+    { "id": "DIAMOND", "name": "Blue Diamond", "isWild": false, "isScatter": false },
+    { "id": "BELL", "name": "Golden Bell", "isWild": false, "isScatter": false },
+    { "id": "BAR", "name": "Triple Bar", "isWild": false, "isScatter": false },
+    { "id": "CHERRY", "name": "Red Cherry", "isWild": false, "isScatter": false },
+    { "id": "LEMON", "name": "Golden Lemon", "isWild": false, "isScatter": false }
+  ],
+  "paytable": {
+    "SEVEN":   { "3": 50, "4": 200, "5": 1000 },
+    "DIAMOND": { "3": 30, "4": 100, "5": 500 },
+    "BELL":    { "3": 20, "4": 60,  "5": 250 },
+    "BAR":     { "3": 15, "4": 40,  "5": 150 },
+    "CHERRY":  { "3": 10, "4": 25,  "5": 100 },
+    "LEMON":   { "3": 5,  "4": 15,  "5": 50 }
+  },
+  "scatterRules": {
+    "symbolId": "SCATTER",
+    "triggerMinCount": 3,
+    "rewards": {
+      "3": { "freeSpins": 10, "multiplier": 2 },
+      "4": { "freeSpins": 15, "multiplier": 5 },
+      "5": { "freeSpins": 25, "multiplier": 20 }
+    }
+  },
+  "paylines": [
+    [1, 1, 1, 1, 1],
+    [0, 0, 0, 0, 0],
+    [2, 2, 2, 2, 2],
+    [0, 1, 2, 1, 0],
+    [2, 1, 0, 1, 2],
+    [0, 0, 1, 2, 2],
+    [2, 2, 1, 0, 0],
+    [1, 0, 0, 0, 1],
+    [1, 2, 2, 2, 1],
+    [1, 0, 1, 2, 1],
+    [1, 2, 1, 0, 1],
+    [0, 1, 1, 1, 0],
+    [2, 1, 1, 1, 2],
+    [0, 1, 0, 1, 0],
+    [2, 1, 2, 1, 2],
+    [1, 1, 0, 1, 1],
+    [1, 1, 2, 1, 1],
+    [0, 2, 0, 2, 0],
+    [2, 0, 2, 0, 2],
+    [0, 2, 2, 2, 0]
+  ],
+  "reelStrips": {
+    "0": ["LEMON", "CHERRY", "BAR", "LEMON", "BELL", "CHERRY", "DIAMOND", "BAR", "SEVEN", "LEMON", "SCATTER", "BELL", "WILD", "CHERRY", "DIAMOND", "BAR", "LEMON", "SEVEN", "BELL", "CHERRY"],
+    "1": ["BAR", "LEMON", "CHERRY", "BELL", "LEMON", "DIAMOND", "BAR", "CHERRY", "SEVEN", "SCATTER", "LEMON", "BELL", "WILD", "BAR", "DIAMOND", "CHERRY", "LEMON", "SEVEN", "BAR", "BELL"],
+    "2": ["CHERRY", "BAR", "LEMON", "BELL", "CHERRY", "DIAMOND", "LEMON", "SEVEN", "BAR", "SCATTER", "BELL", "LEMON", "WILD", "CHERRY", "BAR", "DIAMOND", "BELL", "LEMON", "SEVEN", "CHERRY"],
+    "3": ["BELL", "CHERRY", "BAR", "LEMON", "DIAMOND", "CHERRY", "SEVEN", "LEMON", "BAR", "SCATTER", "BELL", "CHERRY", "WILD", "LEMON", "DIAMOND", "BAR", "BELL", "SEVEN", "CHERRY", "LEMON"],
+    "4": ["DIAMOND", "BELL", "CHERRY", "BAR", "LEMON", "SEVEN", "CHERRY", "BAR", "BELL", "SCATTER", "LEMON", "DIAMOND", "WILD", "CHERRY", "BAR", "LEMON", "SEVEN", "BELL", "CHERRY", "BAR"]
+  }
+}
